@@ -11,10 +11,15 @@ class Program
         //var indices = new TwoSum().Perform(new int[] { 2, 7, 11, 15 }, 9);
         //Console.WriteLine("Indices: " + string.Join(", ", indices));
 
-        ListNode l1 = new ListNode(2, new ListNode(4, new ListNode(3)));
-        ListNode l2 = new ListNode(5, new ListNode(6, new ListNode(4)));
-        var sum = new AddTwoNumbers().Perform(l1, l2);
-        Print(sum);
+        ////leetcode #2
+        //ListNode l1 = new ListNode(2, new ListNode(4, new ListNode(3)));
+        //ListNode l2 = new ListNode(5, new ListNode(6, new ListNode(4)));
+        //var sum = new AddTwoNumbers().Perform(l1, l2);
+        //Print(sum);
+
+        //leetcode #3
+        var maxLength = new LongestSubstringWithoutRepeatingCharacters().Perform("abcabcabb");
+        Console.WriteLine("maxLength: " + maxLength);
     }
 
     public static void Print(ListNode head)
