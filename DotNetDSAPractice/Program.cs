@@ -21,11 +21,15 @@ class Program
         //var maxLength = new LongestSubstringWithoutRepeatingCharacters().Perform("abcabcabb");
         //Console.WriteLine("maxLength: " + maxLength);
 
-        //leetcode #4
-        var median1 = new MedianOfTwoSortedArrays().Perform(new int[] { 1, 3 }, new int[] { 2 });
-        Console.WriteLine(median1);
-        var median2 = new MedianOfTwoSortedArrays().Perform(new int[] { 1, 2 }, new int[] { 3, 4 });
-        Console.WriteLine(median2);
+        ////leetcode #4
+        //var median1 = new MedianOfTwoSortedArrays().Perform(new int[] { 1, 3 }, new int[] { 2 });
+        //Console.WriteLine(median1);
+        //var median2 = new MedianOfTwoSortedArrays().Perform(new int[] { 1, 2 }, new int[] { 3, 4 });
+        //Console.WriteLine(median2);
+
+        //leetcode #5
+        var @string = new LongestPalindromicSubstring().Perform("abbababbabaaababababaabaaaaaaaaaaaaaaaaaa");
+        Console.WriteLine("string = " + @string);
     }
 
     public static void Print(ListNode head)
