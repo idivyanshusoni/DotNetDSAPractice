@@ -1,5 +1,6 @@
 ﻿//https://github.com/idivyanshusoni
 using DotNetDSAPractice;
+using System.Linq.Expressions;
 
 class Program
 {
@@ -31,11 +32,21 @@ class Program
         //var @string = new LongestPalindromicSubstring().Perform("abbababbabaaababababaabaaaaaaaaaaaaaaaaaa");
         //Console.WriteLine("string = " + @string);
 
-        //leetcode #7
-        var reverse = new ReverseInteger().Perform(321);
-        Console.WriteLine("reverse = " + reverse);
-        reverse = new ReverseInteger().Perform(1534236469);
-        Console.WriteLine("reverse = " + reverse);
+        ////leetcode #7
+        //var reverse = new ReverseInteger().Perform(321);
+        //Console.WriteLine("reverse = " + reverse);
+        //reverse = new ReverseInteger().Perform(1534236469);
+        //Console.WriteLine("reverse = " + reverse);
+
+        //leetcode #10
+        var match = new RegularExpressionMatching().Perform("aa", "a*");
+        Console.WriteLine("match = " + match);
+        match = new RegularExpressionMatching().Perform("aab", "c*a*b");
+        Console.WriteLine("match = " + match);
+        match = new RegularExpressionMatching().Perform("ab", ".*");
+        Console.WriteLine("match = " + match);
+        match = new RegularExpressionMatching().Perform("aa", "a");
+        Console.WriteLine("match = " + match);
     }
 
     public static void Print(ListNode head)
