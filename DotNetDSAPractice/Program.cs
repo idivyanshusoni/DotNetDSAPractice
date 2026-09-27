@@ -27,9 +27,15 @@ class Program
         //var median2 = new MedianOfTwoSortedArrays().Perform(new int[] { 1, 2 }, new int[] { 3, 4 });
         //Console.WriteLine(median2);
 
-        //leetcode #5
-        var @string = new LongestPalindromicSubstring().Perform("abbababbabaaababababaabaaaaaaaaaaaaaaaaaa");
-        Console.WriteLine("string = " + @string);
+        ////leetcode #5
+        //var @string = new LongestPalindromicSubstring().Perform("abbababbabaaababababaabaaaaaaaaaaaaaaaaaa");
+        //Console.WriteLine("string = " + @string);
+
+        //leetcode #7
+        var reverse = new ReverseInteger().Perform(321);
+        Console.WriteLine("reverse = " + reverse);
+        reverse = new ReverseInteger().Perform(1534236469);
+        Console.WriteLine("reverse = " + reverse);
     }
 
     public static void Print(ListNode head)
