@@ -1,5 +1,6 @@
 ﻿//https://github.com/idivyanshusoni
 using DotNetDSAPractice;
+using System.ComponentModel;
 using System.Linq.Expressions;
 
 class Program
@@ -10,7 +11,7 @@ class Program
 
         ////leetcode #1
         //var indices = new TwoSum().Perform(new int[] { 2, 7, 11, 15 }, 9);
-        //Console.WriteLine("Indices: " + string.Join(", ", indices));
+        //Console.WriteLine("Indices = " + string.Join(", ", indices));
 
         ////leetcode #2
         //ListNode l1 = new ListNode(2, new ListNode(4, new ListNode(3)));
@@ -38,15 +39,21 @@ class Program
         //reverse = new ReverseInteger().Perform(1534236469);
         //Console.WriteLine("reverse = " + reverse);
 
-        //leetcode #10
-        var match = new RegularExpressionMatching().Perform("aa", "a*");
-        Console.WriteLine("match = " + match);
-        match = new RegularExpressionMatching().Perform("aab", "c*a*b");
-        Console.WriteLine("match = " + match);
-        match = new RegularExpressionMatching().Perform("ab", ".*");
-        Console.WriteLine("match = " + match);
-        match = new RegularExpressionMatching().Perform("aa", "a");
-        Console.WriteLine("match = " + match);
+        ////leetcode #10
+        //var match = new RegularExpressionMatching().Perform("aa", "a*");
+        //Console.WriteLine("match = " + match);
+        //match = new RegularExpressionMatching().Perform("aab", "c*a*b");
+        //Console.WriteLine("match = " + match);
+        //match = new RegularExpressionMatching().Perform("ab", ".*");
+        //Console.WriteLine("match = " + match);
+        //match = new RegularExpressionMatching().Perform("aa", "a");
+        //Console.WriteLine("match = " + match);
+
+        //leetcode #11
+        var maxVolume = new ContainerWithMostWater().Perform(new int[] { 1, 8, 6, 2, 5, 4, 8, 3, 7 });
+        Console.WriteLine("maxVolume = " + maxVolume);
+        maxVolume = new ContainerWithMostWater().Perform(new int[] { 1, 1 });
+        Console.WriteLine("maxVolume = " + maxVolume);
     }
 
     public static void Print(ListNode head)
