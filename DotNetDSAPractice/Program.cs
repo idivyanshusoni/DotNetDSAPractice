@@ -66,10 +66,17 @@ class Program
         //}
         //Console.Write(" ]");
 
-        //leetcode #17
-        var combinations = new LetterCombinationsOfAPhoneNumber().Perform("13324242334442");
-        foreach (var str in combinations)
-            Console.WriteLine(str);
+        ////leetcode #17
+        //var combinations = new LetterCombinationsOfAPhoneNumber().Perform("13324242334442");
+        //foreach (var str in combinations)
+        //    Console.WriteLine(str);
+
+        //leetcode #19
+        //Approach — Two Pointers - fast and slow
+        var head = new RemoveNthNodeFromEndOfList().Perform(new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5))))), 2);
+        Print(head);
+        head = new RemoveNthNodeFromEndOfList().Perform(new ListNode(1, new ListNode(2)), 2);
+        Print(head);
     }
 
     public static void Print(ListNode head)
