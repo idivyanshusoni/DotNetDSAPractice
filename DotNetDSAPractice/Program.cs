@@ -1,7 +1,9 @@
 ﻿//https://github.com/idivyanshusoni
 using DotNetDSAPractice;
 using System.ComponentModel;
+using System.Diagnostics.Metrics;
 using System.Linq.Expressions;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 class Program
 {
@@ -55,14 +57,19 @@ class Program
         //maxVolume = new ContainerWithMostWater().Perform(new int[] { 1, 1 });
         //Console.WriteLine("maxVolume = " + maxVolume);
 
-        //leetcode #15
-        var threeSum = new ThreeSum().Perform(new int[] { -1, 0, 1, 2, -1, -4 });
-        Console.Write("[ ");
-        foreach (IList<int> triplet in threeSum)
-        {
-            Console.Write($" [{string.Join(", ", triplet)}] ");
-        }
-        Console.Write(" ]");
+        ////leetcode #15
+        //var threeSum = new ThreeSum().Perform(new int[] { -1, 0, 1, 2, -1, -4 });
+        //Console.Write("[ ");
+        //foreach (IList<int> triplet in threeSum)
+        //{
+        //    Console.Write($" [{string.Join(", ", triplet)}] ");
+        //}
+        //Console.Write(" ]");
+
+        //leetcode #17
+        var combinations = new LetterCombinationsOfAPhoneNumber().Perform("13324242334442");
+        foreach (var str in combinations)
+            Console.WriteLine(str);
     }
 
     public static void Print(ListNode head)
