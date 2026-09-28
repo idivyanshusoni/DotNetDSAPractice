@@ -49,11 +49,20 @@ class Program
         //match = new RegularExpressionMatching().Perform("aa", "a");
         //Console.WriteLine("match = " + match);
 
-        //leetcode #11
-        var maxVolume = new ContainerWithMostWater().Perform(new int[] { 1, 8, 6, 2, 5, 4, 8, 3, 7 });
-        Console.WriteLine("maxVolume = " + maxVolume);
-        maxVolume = new ContainerWithMostWater().Perform(new int[] { 1, 1 });
-        Console.WriteLine("maxVolume = " + maxVolume);
+        ////leetcode #11
+        //var maxVolume = new ContainerWithMostWater().Perform(new int[] { 1, 8, 6, 2, 5, 4, 8, 3, 7 });
+        //Console.WriteLine("maxVolume = " + maxVolume);
+        //maxVolume = new ContainerWithMostWater().Perform(new int[] { 1, 1 });
+        //Console.WriteLine("maxVolume = " + maxVolume);
+
+        //leetcode #15
+        var threeSum = new ThreeSum().Perform(new int[] { -1, 0, 1, 2, -1, -4 });
+        Console.Write("[ ");
+        foreach (IList<int> triplet in threeSum)
+        {
+            Console.Write($" [{string.Join(", ", triplet)}] ");
+        }
+        Console.Write(" ]");
     }
 
     public static void Print(ListNode head)
