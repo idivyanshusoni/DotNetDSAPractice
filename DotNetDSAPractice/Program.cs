@@ -108,11 +108,18 @@ class Program
         //var result = new MergeTwoSortedLists().Perform(new ListNode(1, new ListNode(2, new ListNode(4))), new ListNode(1, new ListNode(3, new ListNode(4))));
         //Print(result);
 
-        //leetcode #22
-        //Approach — Backtracking
-        var result = new GenerateParentheses().Perform(3);
-        foreach (var s in result)
-            Console.WriteLine(string.Join(", ", s));
+        ////leetcode #22
+        ////Approach — Backtracking
+        //var result = new GenerateParentheses().Perform(3);
+        //foreach (var s in result)
+        //    Console.WriteLine(string.Join(", ", s));
+
+        //leetcode #23
+        //Approach — Min Heap / Priority Queue
+        var result = new MergeKSortedLists().Perform(new ListNode[] { new ListNode(1, new ListNode(2)), new ListNode(1, new ListNode(3, new ListNode(4, new ListNode(5)))) });
+        Print(result);
+        result = new MergeKSortedLists().Perform(null);
+        Print(result);
     }
 
     public static void Print(ListNode head)
