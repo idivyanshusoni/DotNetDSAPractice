@@ -14,7 +14,9 @@ class Program
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        Console.WriteLine("=====================================");
+        Console.WriteLine("=========== Hello, World! ===========");
+        Console.WriteLine("=====================================");
 
         ////leetcode #1
         ////Approach: HashMap / Dictionary
@@ -101,10 +103,16 @@ class Program
         //result = new ValidParentheses().Perform("[{(]})");
         //Console.WriteLine("valid = " + result);
 
-        //leetcode #21
-        //Approach — Two Pointers
-        var result = new MergeTwoSortedLists().Perform(new ListNode(1, new ListNode(2, new ListNode(4))), new ListNode(1, new ListNode(3, new ListNode(4))));
-        Print(result);
+        ////leetcode #21
+        ////Approach — Two Pointers
+        //var result = new MergeTwoSortedLists().Perform(new ListNode(1, new ListNode(2, new ListNode(4))), new ListNode(1, new ListNode(3, new ListNode(4))));
+        //Print(result);
+
+        //leetcode #22
+        //Approach — Backtracking
+        var result = new GenerateParentheses().Perform(3);
+        foreach (var s in result)
+            Console.WriteLine(string.Join(", ", s));
     }
 
     public static void Print(ListNode head)
