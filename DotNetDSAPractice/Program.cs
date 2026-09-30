@@ -123,11 +123,16 @@ class Program
         //result = new MergeKSortedLists().Perform(null);
         //Print(result);
 
-        //leetcode #25
-        //Approach — Find Group → Reverse → Connect
-        //This is a classic Linked List + Pointer Manipulation problem.
-        var result = new ReverseNodesInKGroup().Perform(new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5, new ListNode(6, new ListNode(7, new ListNode(8)))))))), 3);
-        Print(result);
+        ////leetcode #25
+        ////Approach — Find Group → Reverse → Connect
+        ////This is a classic Linked List + Pointer Manipulation problem.
+        //var result = new ReverseNodesInKGroup().Perform(new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5, new ListNode(6, new ListNode(7, new ListNode(8)))))))), 3);
+        //Print(result);
+
+        //leetcode #33
+        //Approach — Modified Binary Search
+        var result = new SearchInRotatedSortedArray().Perform(new int[] { 5, 6, 7, 8, 9, 1, 2, 3, 4 }, 4);
+        Console.WriteLine(result);
     }
 
     public static void Print(ListNode head)
