@@ -8,6 +8,8 @@ using System.ComponentModel;
 using System.Diagnostics.Metrics;
 using System.Linq.Expressions;
 using System.Reflection;
+using System.Text.RegularExpressions;
+using System.Xml.Linq;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 class Program
@@ -114,11 +116,17 @@ class Program
         //foreach (var s in result)
         //    Console.WriteLine(string.Join(", ", s));
 
-        //leetcode #23
-        //Approach — Min Heap / Priority Queue
-        var result = new MergeKSortedLists().Perform(new ListNode[] { new ListNode(1, new ListNode(2)), new ListNode(1, new ListNode(3, new ListNode(4, new ListNode(5)))) });
-        Print(result);
-        result = new MergeKSortedLists().Perform(null);
+        ////leetcode #23
+        ////Approach — Min Heap / Priority Queue
+        //var result = new MergeKSortedLists().Perform(new ListNode[] { new ListNode(1, new ListNode(2)), new ListNode(1, new ListNode(3, new ListNode(4, new ListNode(5)))) });
+        //Print(result);
+        //result = new MergeKSortedLists().Perform(null);
+        //Print(result);
+
+        //leetcode #25
+        //Approach — Find Group → Reverse → Connect
+        //This is a classic Linked List + Pointer Manipulation problem.
+        var result = new ReverseNodesInKGroup().Perform(new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5, new ListNode(6, new ListNode(7, new ListNode(8)))))))), 3);
         Print(result);
     }
 
