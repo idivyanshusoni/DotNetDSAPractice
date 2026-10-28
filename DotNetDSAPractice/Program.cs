@@ -20,7 +20,7 @@ class Program
         //ListNode l1 = new ListNode(2, new ListNode(4, new ListNode(3)));
         //ListNode l2 = new ListNode(5, new ListNode(6, new ListNode(4)));
         //var result = new AddTwoNumbers().Perform(l1, l2);
-        //Print(result);
+        //PrintListNode(result);
 
         ////leetcode #3
         ////Approach — Sliding Window
@@ -83,9 +83,9 @@ class Program
         ////leetcode #19
         ////Approach — Two Pointers - fast and slow
         //var result = new RemoveNthNodeFromEndOfList().Perform(new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5))))), 2);
-        //Print(result);
+        //PrintListNode(result);
         //result = new RemoveNthNodeFromEndOfList().Perform(new ListNode(1, new ListNode(2)), 2);
-        //Print(result);
+        //PrintListNode(result);
 
         ////leetcode #20
         ////Approach — Stack
@@ -97,7 +97,7 @@ class Program
         ////leetcode #21
         ////Approach — Two Pointers
         //var result = new MergeTwoSortedLists().Perform(new ListNode(1, new ListNode(2, new ListNode(4))), new ListNode(1, new ListNode(3, new ListNode(4))));
-        //Print(result);
+        //PrintListNode(result);
 
         ////leetcode #22
         ////Approach — Backtracking
@@ -108,38 +108,43 @@ class Program
         ////leetcode #23
         ////Approach — Min Heap / Priority Queue
         //var result = new MergeKSortedLists().Perform(new ListNode[] { new ListNode(1, new ListNode(2)), new ListNode(1, new ListNode(3, new ListNode(4, new ListNode(5)))) });
-        //Print(result);
+        //PrintListNode(result);
         //result = new MergeKSortedLists().Perform(null);
-        //Print(result);
+        //PrintListNode(result);
 
         ////leetcode #25
         ////Approach — Find Group → Reverse → Connect
         ////This is a classic Linked List + Pointer Manipulation problem.
         //var result = new ReverseNodesInKGroup().Perform(new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5, new ListNode(6, new ListNode(7, new ListNode(8)))))))), 3);
-        //Print(result);
+        //PrintListNode(result);
 
         ////leetcode #33
         ////Approach — Modified Binary Search
         //var result = new SearchInRotatedSortedArray().Perform(new int[] { 5, 6, 7, 8, 9, 1, 2, 3, 4 }, 4);
         //Console.WriteLine(result);
 
-        //leetcode #36
-        //Approach - HashSet
-        var result = new IsValidSudoku().Perform(new string[] {
-              "53..7...."
-            , "6..195..."
-            , ".98....6."
-            , "8...6...3"
-            , "4..8.3..1"
-            , "7...2...6"
-            , ".6....28."
-            , "...419..5"
-            , "....8..79"
-        });
-        Console.WriteLine(result);
+        ////leetcode #36
+        ////Approach - HashSet
+        //var result = new IsValidSudoku().Perform(new string[] {
+        //      "53..7...."
+        //    , "6..195..."
+        //    , ".98....6."
+        //    , "8...6...3"
+        //    , "4..8.3..1"
+        //    , "7...2...6"
+        //    , ".6....28."
+        //    , "...419..5"
+        //    , "....8..79"
+        //});
+        //Console.WriteLine(result);
+
+        //leetcode #39
+        //Approach - Backtracking
+        var result = new CombinationSum().Perform(new int[] { 2, 3, 6, 7 }, 7);
+        PrintListOfList(result);
     }
 
-    public static void Print(ListNode head)
+    private static void PrintListNode(ListNode head)
     {
         while (head != null)
         {
@@ -152,5 +157,20 @@ class Program
         }
 
         Console.WriteLine();
+    }
+
+    private static void PrintListOfList(
+        IList<IList<int>> result)
+    {
+        Console.WriteLine("[");
+
+        foreach (IList<int> combination in result)
+        {
+            Console.WriteLine(
+                "  [" + string.Join(", ", combination) + "]"
+            );
+        }
+
+        Console.WriteLine("]");
     }
 }
