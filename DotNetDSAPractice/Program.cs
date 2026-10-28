@@ -1,23 +1,12 @@
 ﻿//https://github.com/idivyanshusoni
 using DotNetDSAPractice;
-using System;
-using System.Collections;
-using System.Collections.Concurrent;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Diagnostics.Metrics;
-using System.Linq.Expressions;
-using System.Reflection;
-using System.Text.RegularExpressions;
-using System.Xml.Linq;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 class Program
 {
     public static void Main(string[] args)
     {
         Console.WriteLine("=====================================");
-        Console.WriteLine("=========== Hello, World! ===========");
+        Console.WriteLine("========= LeetCode Practice =========");
         Console.WriteLine("=====================================");
 
         ////leetcode #1
@@ -129,9 +118,24 @@ class Program
         //var result = new ReverseNodesInKGroup().Perform(new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5, new ListNode(6, new ListNode(7, new ListNode(8)))))))), 3);
         //Print(result);
 
-        //leetcode #33
-        //Approach — Modified Binary Search
-        var result = new SearchInRotatedSortedArray().Perform(new int[] { 5, 6, 7, 8, 9, 1, 2, 3, 4 }, 4);
+        ////leetcode #33
+        ////Approach — Modified Binary Search
+        //var result = new SearchInRotatedSortedArray().Perform(new int[] { 5, 6, 7, 8, 9, 1, 2, 3, 4 }, 4);
+        //Console.WriteLine(result);
+
+        //leetcode #36
+        //Approach - HashSet
+        var result = new IsValidSudoku().Perform(new string[] {
+              "53..7...."
+            , "6..195..."
+            , ".98....6."
+            , "8...6...3"
+            , "4..8.3..1"
+            , "7...2...6"
+            , ".6....28."
+            , "...419..5"
+            , "....8..79"
+        });
         Console.WriteLine(result);
     }
 
