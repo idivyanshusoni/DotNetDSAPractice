@@ -143,10 +143,15 @@ class Program
         //var result = new CombinationSum().Perform(new int[] { 2, 3, 6, 7 }, 7);
         //PrintListOfList(result);
 
-        //leetcode #40
-        //Approach - Backtracking
-        var result = new CombinationSum2().Perform(new int[] { 10, 1, 2, 7, 6, 1, 5 }, 8);
-        PrintListOfList(result);
+        ////leetcode #40
+        ////Approach - Backtracking
+        //var result = new CombinationSum2().Perform(new int[] { 10, 1, 2, 7, 6, 1, 5 }, 8);
+        //PrintListOfList(result);
+
+        //leetcode #42
+        //Approach - Two pointers
+        var result = new TrappingRainWater().Perform(new int[] { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 });
+        Console.WriteLine(result);
     }
 
     private static void PrintListNode(ListNode head)
