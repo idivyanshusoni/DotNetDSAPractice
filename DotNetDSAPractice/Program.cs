@@ -138,9 +138,14 @@ class Program
         //});
         //Console.WriteLine(result);
 
-        //leetcode #39
+        ////leetcode #39
+        ////Approach - Backtracking
+        //var result = new CombinationSum().Perform(new int[] { 2, 3, 6, 7 }, 7);
+        //PrintListOfList(result);
+
+        //leetcode #40
         //Approach - Backtracking
-        var result = new CombinationSum().Perform(new int[] { 2, 3, 6, 7 }, 7);
+        var result = new CombinationSum2().Perform(new int[] { 10, 1, 2, 7, 6, 1, 5 }, 8);
         PrintListOfList(result);
     }
 
@@ -159,8 +164,7 @@ class Program
         Console.WriteLine();
     }
 
-    private static void PrintListOfList(
-        IList<IList<int>> result)
+    private static void PrintListOfList(IList<IList<int>> result)
     {
         Console.WriteLine("[");
 
