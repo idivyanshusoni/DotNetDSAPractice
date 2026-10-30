@@ -153,11 +153,16 @@ class Program
         //var result = new TrappingRainWater().Perform(new int[] { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 });
         //Console.WriteLine(result);
 
-        //leetcode #43
-        //Approach - Multiply Digit by Digit
-        var result = new MultiplyStrings().Perform("2", "3");
-        Console.WriteLine(result);
-        result = new MultiplyStrings().Perform("123", "456");
+        ////leetcode #43
+        ////Approach - Multiply Digit by Digit
+        //var result = new MultiplyStrings().Perform("2", "3");
+        //Console.WriteLine(result);
+        //result = new MultiplyStrings().Perform("123", "456");
+        //Console.WriteLine(result);
+
+        //leetcode #45
+        //Approach - Greedy Algorithm
+        var result = new JumpGame2().Perform(new int[] { 2, 3, 1, 1, 4 });
         Console.WriteLine(result);
     }
 
