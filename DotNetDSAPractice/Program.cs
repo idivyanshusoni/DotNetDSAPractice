@@ -160,10 +160,15 @@ class Program
         //result = new MultiplyStrings().Perform("123", "456");
         //Console.WriteLine(result);
 
-        //leetcode #45
-        //Approach - Greedy Algorithm
-        var result = new JumpGame2().Perform(new int[] { 2, 3, 1, 1, 4 });
-        Console.WriteLine(result);
+        ////leetcode #45
+        ////Approach - Greedy Algorithm
+        //var result = new JumpGame2().Perform(new int[] { 2, 3, 1, 1, 4 });
+        //Console.WriteLine(result);
+
+        //leetcode #46
+        //Approach - Backtracking
+        var result = new Permutations().Perform(new int[] { 1, 2, 3 });
+        PrintListOfList(result);
     }
 
     private static void PrintListNode(ListNode head)
