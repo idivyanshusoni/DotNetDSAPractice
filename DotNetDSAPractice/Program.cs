@@ -148,9 +148,16 @@ class Program
         //var result = new CombinationSum2().Perform(new int[] { 10, 1, 2, 7, 6, 1, 5 }, 8);
         //PrintListOfList(result);
 
-        //leetcode #42
-        //Approach - Two pointers
-        var result = new TrappingRainWater().Perform(new int[] { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 });
+        ////leetcode #42
+        ////Approach - Two pointers
+        //var result = new TrappingRainWater().Perform(new int[] { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 });
+        //Console.WriteLine(result);
+
+        //leetcode #43
+        //Approach - Multiply Digit by Digit
+        var result = new MultiplyStrings().Perform("2", "3");
+        Console.WriteLine(result);
+        result = new MultiplyStrings().Perform("123", "456");
         Console.WriteLine(result);
     }
 
