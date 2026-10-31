@@ -165,10 +165,15 @@ class Program
         //var result = new JumpGame2().Perform(new int[] { 2, 3, 1, 1, 4 });
         //Console.WriteLine(result);
 
-        //leetcode #46
-        //Approach - Backtracking
-        var result = new Permutations().Perform(new int[] { 1, 2, 3 });
-        PrintListOfList(result);
+        ////leetcode #46
+        ////Approach - Backtracking
+        //var result = new Permutations().Perform(new int[] { 1, 2, 3 });
+        //PrintListOfList(result);
+
+        //leetcode #48
+        //Approach - Transpose + Reverse Each Row
+        var result = new RotateImage().Perform(new int[][] { new int[] { 1, 2, 3 }, new int[] { 4, 5, 6 }, new int[] { 7, 8, 9 } });
+        PrintArrayOfArray(result);
     }
 
     private static void PrintListNode(ListNode head)
@@ -198,5 +203,15 @@ class Program
         }
 
         Console.WriteLine("]");
+    }
+
+    public static void PrintArrayOfArray(int[][] matrix)
+    {
+        foreach (int[] row in matrix)
+        {
+            Console.WriteLine(
+                "[" + string.Join(", ", row) + "]"
+            );
+        }
     }
 }
