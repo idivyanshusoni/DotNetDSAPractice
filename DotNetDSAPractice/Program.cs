@@ -176,10 +176,15 @@ class Program
         //var result = new RotateImage().Perform(new int[][] { new int[] { 1, 2, 3 }, new int[] { 4, 5, 6 }, new int[] { 7, 8, 9 } });
         //PrintArrayOfArray(result);
 
-        //leetcode #49
-        //Approach - HashMap + Sorting
-        var result = new GroupAnagrams().Perform(new string[] { "eat", "tea", "tan", "ate", "nat", "bat" });
-        PrintGroups(result);
+        ////leetcode #49
+        ////Approach - HashMap + Sorting
+        //var result = new GroupAnagrams().Perform(new string[] { "eat", "tea", "tan", "ate", "nat", "bat" });
+        //PrintGroups(result);
+
+        //leetcode #50
+        //Approach - Binary Exponentiation (Fast Power)
+        var result = new XToThePowerN().Perform(2.0, 10);
+        Console.WriteLine(result);
     }
 
     private static void PrintListNode(ListNode head)
