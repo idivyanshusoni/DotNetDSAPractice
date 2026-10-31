@@ -1,5 +1,6 @@
 ﻿//https://github.com/idivyanshusoni
 using DotNetDSAPractice;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 class Program
 {
@@ -170,10 +171,15 @@ class Program
         //var result = new Permutations().Perform(new int[] { 1, 2, 3 });
         //PrintListOfList(result);
 
-        //leetcode #48
-        //Approach - Transpose + Reverse Each Row
-        var result = new RotateImage().Perform(new int[][] { new int[] { 1, 2, 3 }, new int[] { 4, 5, 6 }, new int[] { 7, 8, 9 } });
-        PrintArrayOfArray(result);
+        ////leetcode #48
+        ////Approach - Transpose + Reverse Each Row
+        //var result = new RotateImage().Perform(new int[][] { new int[] { 1, 2, 3 }, new int[] { 4, 5, 6 }, new int[] { 7, 8, 9 } });
+        //PrintArrayOfArray(result);
+
+        //leetcode #49
+        //Approach - HashMap + Sorting
+        var result = new GroupAnagrams().Perform(new string[] { "eat", "tea", "tan", "ate", "nat", "bat" });
+        PrintGroups(result);
     }
 
     private static void PrintListNode(ListNode head)
@@ -211,6 +217,16 @@ class Program
         {
             Console.WriteLine(
                 "[" + string.Join(", ", row) + "]"
+            );
+        }
+    }
+
+    public static void PrintGroups(IList<IList<string>> groups)
+    {
+        foreach (var group in groups)
+        {
+            Console.WriteLine(
+                "[" + string.Join(", ", group) + "]"
             );
         }
     }
